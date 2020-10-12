@@ -1,0 +1,25 @@
+{
+  "name": "zzpackagename",
+  "version": "1.0.0",
+  "description": "descripzz",
+  "main": "entrypoint",
+  "dependencies": {
+    "async": "^0.2.10",
+    "i2c-bus": "^4.0.7",
+    "onoff": "^4.1.1",
+    "rpi-gpio": "^2.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "yyytestcmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "zzz"
+  },
+  "keywords": [
+    "zzz"
+  ],
+  "author": "zzz",
+  "license": "ISC"
+}
