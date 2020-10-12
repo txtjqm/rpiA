@@ -1,0 +1,19 @@
+
+git init
+git add *
+git commit
+git diff
+  vi zzzzz
+git commit *
+git rm -f powerShellNotes.txt 
+-- now use github web console to create new repository.
+     the web page shows the following 2 lines to copy/paste.
+-- this connects git to this "remote repository"
+git remote add origin https://github.com/txtjqm/cmdLineGitTest.git
+-- push the files to "remote repository"
+git push -u origin master
+-- edit a file
+git commit
+git push -u origin master
+
+git remote -v
