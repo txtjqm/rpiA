@@ -2,6 +2,7 @@
 oct 2020  ... making new git repos now uses main instead of master for good reason.
 existing git on rpi makes repo as master, which breaks the command "git push -u origin main"
 fix it with "git push -u origin master:main --force" which uses the local master to push to main on github.
+note that --force ignores changes on remote
 
 git init
 git add *
@@ -15,9 +16,13 @@ git rm -f powerShellNotes.txt
 -- this connects git to this "remote repository"
 git remote add origin https://github.com/txtjqm/cmdLineGitTest.git
 -- push the files to "remote repository"
-git push -u origin master
+git push -u origin master:main
 -- edit a file
+git add .       --stages file for commit
 git commit
-git push -u origin master
+git push -u origin master:main
 
 git remote -v
+
+-- to get latest version of file from github
+git pull
