@@ -1,4 +1,8 @@
 
+oct 2020  ... making new git repos now uses main instead of master for good reason.
+existing git on rpi makes repo as master, which breaks the command "git push -u origin main"
+fix it with "git push -u origin master:main --force" which uses the local master to push to main on github.
+
 git init
 git add *
 git commit
